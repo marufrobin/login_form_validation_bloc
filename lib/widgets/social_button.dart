@@ -8,24 +8,24 @@ class SocialButton extends StatelessWidget {
   final String label;
   final double horizontalPadding;
   const SocialButton({
-    Key? key,
+    super.key,
     required this.iconPath,
     required this.label,
     this.horizontalPadding = 100,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
     return TextButton.icon(
       onPressed: () {},
-      icon: SvgPicture.asset(iconPath, width: 25, color: Pallete.whiteColor),
+      icon: SvgPicture.asset(iconPath, width: 24, color: Pallete.whiteColor),
       label: Text(
         label,
-        style: const TextStyle(color: Pallete.whiteColor, fontSize: 17),
+        style: const TextStyle(color: Pallete.whiteColor, fontSize: 16),
       ),
       style: TextButton.styleFrom(
         padding: EdgeInsets.symmetric(
-          vertical: 30,
+          vertical: 16,
           horizontal: horizontalPadding,
         ),
         shape: RoundedRectangleBorder(
