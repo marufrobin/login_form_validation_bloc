@@ -14,18 +14,18 @@ class GradientButton extends StatelessWidget {
           begin: Alignment.bottomLeft,
           end: Alignment.topRight,
         ),
-        borderRadius: BorderRadius.circular(7),
+        borderRadius: BorderRadius.circular(8),
       ),
       child: ElevatedButton(
         onPressed: () {},
         style: ElevatedButton.styleFrom(
-          fixedSize: const Size(395, 55),
+          fixedSize: const Size(400, 50),
           backgroundColor: Colors.transparent,
           shadowColor: Colors.transparent,
         ),
         child: const Text(
           'Sign in',
-          style: TextStyle(fontWeight: FontWeight.w600, fontSize: 17),
+          style: TextStyle(fontWeight: FontWeight.w600, fontSize: 16),
         ),
       ),
     );

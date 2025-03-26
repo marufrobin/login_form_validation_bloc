@@ -18,7 +18,7 @@ class LoginField extends StatelessWidget {
       child: TextFormField(
         controller: controller,
         decoration: InputDecoration(
-          contentPadding: const EdgeInsets.all(27),
+          contentPadding: const EdgeInsets.all(16),
           enabledBorder: OutlineInputBorder(
             borderSide: const BorderSide(color: Pallete.borderColor, width: 3),
             borderRadius: BorderRadius.circular(10),
