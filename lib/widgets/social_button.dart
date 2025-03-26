@@ -11,7 +11,7 @@ class SocialButton extends StatelessWidget {
     super.key,
     required this.iconPath,
     required this.label,
-    this.horizontalPadding = 100,
+    this.horizontalPadding = 90,
   });
 
   @override
