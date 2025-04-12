@@ -25,14 +25,14 @@ class HomeScreen extends StatelessWidget {
           if (state is AuthLoading) {
             return Center(child: CircularProgressIndicator());
           }
-          final authSate = context.watch<AuthBloc>().state as AuthSuccess;
+          // final authSate = context.watch<AuthBloc>().state as AuthSuccess;
 
           return Center(
             child: Column(
               spacing: 60,
               children: [
                 SizedBox(height: 100),
-                Text(authSate.uid),
+                Text((state as AuthSuccess).uid),
                 GradientButton(
                   onPressed: () {
                     context.read<AuthBloc>().add(AuthLogOutRequested());
