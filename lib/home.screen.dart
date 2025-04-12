@@ -10,8 +10,6 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final authSate = context.watch<AuthBloc>().state as AuthSuccess;
-
     return Scaffold(
       appBar: AppBar(title: const Text('Home Screen')),
       body: BlocConsumer<AuthBloc, AuthState>(
@@ -27,6 +25,8 @@ class HomeScreen extends StatelessWidget {
           if (state is AuthLoading) {
             return Center(child: CircularProgressIndicator());
           }
+          final authSate = context.watch<AuthBloc>().state as AuthSuccess;
+
           return Center(
             child: Column(
               spacing: 60,
